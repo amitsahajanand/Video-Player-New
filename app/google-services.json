@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "159798540287",
+    "project_id": "video-player-e0df7",
+    "storage_bucket": "video-player-e0df7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159798540287:android:fe612a09052cc8d52899ca",
+        "android_client_info": {
+          "package_name": "com.videoplayer.fastplayer.gdvideoplayer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159798540287-udmfqvh6oo7r0lsv03af1kn78dhte2fu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrf9u-qIcdUmzKq5XmIHoDFo35gvkCT44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159798540287-udmfqvh6oo7r0lsv03af1kn78dhte2fu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

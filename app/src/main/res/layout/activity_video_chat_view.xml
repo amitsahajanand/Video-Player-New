@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/main_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <VideoView
+                android:id="@+id/videocall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="-1dp"
+                android:layout_marginRight="-1dp"
+                android:layout_marginTop="-8dp"
+                android:layout_marginBottom="0dp" />
+
+
+            <!-- <SurfaceView
+                 android:id="@+id/surfaceview"
+                 android:layout_width="130dp"
+                 android:layout_height="180dp"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentBottom="true"
+                 android:layout_marginRight="20dp"
+
+                 android:layout_marginBottom="120dp" />-->
+        </RelativeLayout>
+
+
+        <com.tuyenmonkey.mkloader.MKLoader
+            android:id="@+id/mk_loader"
+            android:layout_width="37dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            app:mk_color="#ffffff"
+
+            app:mk_type="LineSpinner" />
+
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="match_parent">
+
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:layout_width="@dimen/_100sdp"-->
+        <!--            android:layout_height="@dimen/_120sdp"-->
+        <!--            android:layout_above="@+id/ln_main_bg"-->
+        <!--            android:layout_margin="@dimen/_20sdp"-->
+        <!--            app:cardCornerRadius="@dimen/_10sdp">-->
+
+        <FrameLayout
+            android:id="@+id/local_video_view_container"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_above="@+id/ln_main_bg"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_margin="@dimen/_20sdp" />
+
+
+
+        <!--        </androidx.cardview.widget.CardView>-->
+
+
+
+        <RelativeLayout
+            android:id="@+id/ln_main_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/rlt_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/iv_video_mute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/voice_on"
+                        android:onClick="onVideoMuteClick"
+                        tools:ignore="OnClick" />
+
+                    <!--<ImageView
+                        android:id="@+id/SepekSound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/voice_stop"
+                        android:visibility="gone" />-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignLeft="@id/rlt_one"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/endCall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/call_endd"
+                        android:onClick="onCallClicked"
+
+                        tools:ignore="OnClick" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/BackCamera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <!--  <ImageView
+                          android:id="@+id/FrontCamera"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+
+                          android:src="@drawable/flip_camera"
+                          android:visibility="gone" />-->
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="onVideoSwitchCamera"
+                        android:src="@drawable/flip_camera"
+                        android:visibility="visible"
+                        tools:ignore="OnClick" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

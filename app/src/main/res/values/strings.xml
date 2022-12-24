@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Video Player</string>
+
+    <!-- //Video Player-->
+    <string name="confirm_cancel">Cancel</string>
+    <string name="confirm_delete">Delete</string>
+    <string name="confirm">are you sure you want to delete </string>
+    <string name="delete_video">Delete Video ?</string>
+    <string name="file_location">Location</string>
+    <string name="format">Format</string>
+    <string name="file_size">Size</string>
+    <string name="duration">Duration</string>
+    <string name="resolution">Resolution</string>
+    <string name="date_added">Date</string>
+    <string name="share_app_message">Download Video Downloader and Player.\nGreat Video Player App With Whatsapp Status Saver.\nDownload Now: </string>
+
+    <!--//Music Player-->
+    <string name="no_app_installed">No application found to open this file.</string>
+    <string name="share_image_via">Share File via...</string>
+    <string name="share_txt">Hey view/download this image</string>
+    <string name="already_downloader">Already Downloaded.</string>
+
+
+    <string name="instagram_not_installed">Instagram not installed.</string>
+    <string name="no_app_found">No application found to open this file.</string>
+    <string name="second_ago"> sec ago</string>
+    <string name="minutes_ago"> min ago</string>
+    <string name="hours_ago"> hr ago</string>
+    <string name="day_ago"> day ago</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="logout_message">Do you want to Logout?</string>
+    <string name="enter_valid_url">Enter Valid Url</string>
+    <string name="no_net_conn">No Internet Connection</string>
+    <string name="enter_url">Enter Url</string>
+    <string name="no_media_on_tweet">No Media on Tweet or Invalid Link</string>
+
+
+    <string name="makecallmsg">Note:You will most likely to connect with a same age as a age you select below.lets start</string>
+    <string name="disconnected">disconnected</string>
+
+    <string name="switch_off">Connected</string>
+    <string name="switch_on">Not Connected</string>
+
+
+</resources>
